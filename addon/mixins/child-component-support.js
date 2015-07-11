@@ -4,19 +4,6 @@ import _computed from 'ember-new-computed';
 const { assert } = Ember;
 
 export default Ember.Mixin.create({
-  childComponentClassName: null,
-  classNameBindings: ['_childComponentClassString'],
-  _childComponentClassString: _computed('_parentComponent', 'childComponentClassName', {
-    get() {
-      let cccn = this.get('childComponentClassName');
-      if (!cccn) {
-        return '';
-      } else {
-        let parentComponent = this.get('_parentComponent');
-        return `${parentComponent.get('_primaryClassNameString')}--${this.get('childComponentClassName')}`;
-      }
-    }
-  }),
 
   init() {
     this._super(...arguments);
