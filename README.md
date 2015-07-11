@@ -6,7 +6,7 @@ Composability-oriented tools for Ember.js apps
 
 The `child-component-support` and `parent-component-support` mixins can be used for parents and children that need aware ness and/or access to each other
 
-**Parent**
+#### Parent
 
 **app/components/my-parent.js**
 
@@ -22,7 +22,8 @@ export default Ember.Component.extend(ParentComponentSupport, {
 
 ````
 
-**Child**
+#### Child
+
 **app/components/my-child.js**
 
 ````js
@@ -51,7 +52,9 @@ Then, you can render parents and children together in block form
 ````
 
 parents can have access to child properties
+
 **app/components/my-parent.js**
+
 ```javascript
 
 total: computed('composableChildren.@each.value', {
@@ -68,7 +71,9 @@ total: computed('composableChildren.@each.value', {
 ```
 
 and children can have access to parent properties
+
 **app/templates/components/my-child.hbs**
+
 ```handlebars
   {{composableParent.name}}
 
