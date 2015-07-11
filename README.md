@@ -4,6 +4,8 @@
 [![Dependency Status](https://david-dm.org/truenorth/ember-composability.svg)](https://david-dm.org/truenorth/ember-composability)
 [![devDependency Status](https://david-dm.org/truenorth/ember-composability/dev-status.svg)](https://david-dm.org/truenorth/ember-composability#info=devDependencies)
 [![Code Climate](https://codeclimate.com/github/truenorth/ember-composability/badges/gpa.svg)](https://codeclimate.com/github/truenorth/ember-composability)
+[![npm version](https://badge.fury.io/js/ember-composability.svg)](http://badge.fury.io/js/ember-composability)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-composability.svg)](http://emberobserver.com/addons/ember-composability)
 
 Composability-oriented tools for Ember.js apps
 
