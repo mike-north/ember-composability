@@ -1,5 +1,10 @@
 # ember-composability
 
+[![Build Status](https://travis-ci.org/truenorth/ember-composability.svg?branch=master)](https://travis-ci.org/truenorth/ember-composability)
+[![Dependency Status](https://david-dm.org/truenorth/ember-composability.svg)](https://david-dm.org/truenorth/ember-composability)
+[![devDependency Status](https://david-dm.org/truenorth/ember-composability/dev-status.svg)](https://david-dm.org/truenorth/ember-composability#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/truenorth/ember-composability/badges/gpa.svg)](https://codeclimate.com/github/truenorth/ember-composability)
+
 Composability-oriented tools for Ember.js apps
 
 ## Composable components
