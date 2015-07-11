@@ -1,0 +1,14 @@
+.bordered-container {
+  border: 1px solid black;
+  margin: 8px;
+  padding: 8px;
+}
+
+
+.bordered-container.parent {
+  background-color: rgba(255,0,0,0.2);
+}
+
+.bordered-container.child {
+  background-color: rgba(0, 0, 255,0.2);
+}
