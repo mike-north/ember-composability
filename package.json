@@ -1,7 +1,7 @@
 {
   "name": "ember-composability",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember.js composability tools & helpers",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,9 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "repository": "https://github.com/truenorth/ember-composability.git",
+  "homepage": "https://github.com/truenorth/ember-composability",
+  "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
@@ -34,10 +36,12 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
     "ember-disable-prototype-extensions": "^1.0.0",
-    "ember-try": "0.0.6"
+    "ember-try": "0.0.7"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "composable",
+    "composability"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"

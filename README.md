@@ -1,6 +1,6 @@
-# Ember-composability
+# ember-composability
 
-This README outlines the details of collaborating on this Ember addon.
+Composability-oriented tools for Ember.js apps
 
 ## Installation
 
