@@ -6,6 +6,17 @@ Composability-oriented tools for Ember.js apps
 
 The `child-component-support` and `parent-component-support` mixins can be used for parents and children that need aware ness and/or access to each other
 
+For example, you may want to expressively declare some parent/child components like this
+
+````handlebars
+{{#my-parent}}
+  {{my-child}}
+  {{my-child}}
+  {{my-child}}
+{{/my-parent}}
+
+````
+
 #### Parent
 
 **app/components/my-parent.js**
@@ -21,6 +32,21 @@ export default Ember.Component.extend(ParentComponentSupport, {
 });
 
 ````
+
+parents can have access to child properties, via the `composableChildren` property
+
+**app/components/my-parent.js**
+
+```javascript
+
+  totalValue: computed('composableChildren.@each.value', {
+    get() {
+      return this.get('composableChildren')
+        .reduce((acc, val) => acc += val.get('value'), 0);
+    }
+  })
+
+```
 
 #### Child
 
@@ -40,33 +66,7 @@ export default Ember.Component.extend(ChildComponentSupport, {
 
 ````
 
-Then, you can render parents and children together in block form
-
-````handlebars
-{{#my-parent}}
-  {{my-child}}
-  {{my-child}}
-  {{my-child}}
-{{/my-parent}}
-
-````
-
-parents can have access to child properties, via the `composableChildren` property
-
-**app/components/my-parent.js**
-
-```javascript
-
-  totalValue: computed('composableChildren.@each.value', {
-    get() {
-      return this.get('composableChildren')
-        .reduce((acc, val) => acc += val.get('value'), 0);
-    }
-  })
-
-```
-
-and children can have access to parent properties via the `composableParent` property
+children can have access to parent properties via the `composableParent` property
 
 **app/templates/components/my-child.hbs**
 
