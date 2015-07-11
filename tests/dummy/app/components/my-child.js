@@ -6,5 +6,6 @@ import layout from '../templates/components/my-child';
 export default Ember.Component.extend(ChildComponentSupport, {
   classNames: ['bordered-container', 'child'],
   layout,
+  value: 3,
   _parentComponentTypes: [MyParent]
 });

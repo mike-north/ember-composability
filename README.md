@@ -51,26 +51,22 @@ Then, you can render parents and children together in block form
 
 ````
 
-parents can have access to child properties
+parents can have access to child properties, via the `composableChildren` property
 
 **app/components/my-parent.js**
 
 ```javascript
 
-total: computed('composableChildren.@each.value', {
-  get() {
-
-    let tot = 0;
-    this.get('composableChildren').forEach(child => {
-      tot += child.get('value');
-    });
-    return tot;
-  }
-})
+  totalValue: computed('composableChildren.@each.value', {
+    get() {
+      return this.get('composableChildren')
+        .reduce((acc, val) => acc += val.get('value'), 0);
+    }
+  })
 
 ```
 
-and children can have access to parent properties
+and children can have access to parent properties via the `composableParent` property
 
 **app/templates/components/my-child.hbs**
 
