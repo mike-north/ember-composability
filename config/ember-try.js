@@ -32,6 +32,15 @@ module.exports = {
       }
     },
     {
+      name: 'ember-release',
+      dependencies: {
+        ember: 'components/ember#release'
+      },
+      resolutions: {
+        ember: 'release'
+      }
+    },
+    {
       name: 'ember-beta',
       dependencies: {
         ember: 'components/ember#beta'
