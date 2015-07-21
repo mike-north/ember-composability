@@ -31,12 +31,18 @@ export default Ember.Mixin.create({
     return c;
   },
 
+  shouldRegisterToParent(/*parentComponent*/) {
+    return true;
+  },
+
   _registerWithParent() {
     let parentComponent = this._componentToRegisterTo();
     if (parentComponent) {
-      parentComponent.registerChildComponent(this);
+      if (this.shouldRegisterToParent(parentComponent)) {
+        parentComponent.registerChildComponent(this);
+      }
+      this.set('composableParent', parentComponent);
     }
-    this.notifyPropertyChange('composableParent');
   },
 
   _unregisterWithParent() {
@@ -44,6 +50,6 @@ export default Ember.Mixin.create({
     if (parentComponent) {
       parentComponent.unregisterChildComponent(this);
     }
-    this.notifyPropertyChange('composableParent');
+    this.set('composableParent', null);
   }
 });
