@@ -12,8 +12,8 @@ export default Ember.Mixin.create({
   },
 
   willDestroyElement() {
-    this._super(...arguments);
     this._unregisterWithParent();
+    this._super(...arguments);
   },
 
   composableParent: _computed({
@@ -50,6 +50,5 @@ export default Ember.Mixin.create({
     if (parentComponent) {
       parentComponent.unregisterChildComponent(this);
     }
-    this.set('composableParent', null);
   }
 });
