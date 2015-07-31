@@ -1,6 +1,6 @@
 {
   "name": "ember-composability",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Ember.js composability tools & helpers",
   "directories": {
     "doc": "doc",
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/truenorth/ember-composability.git",
+  "repository": "https://github.com/mike-north/ember-composability.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "homepage": "https://github.com/truenorth/ember-composability",
+  "homepage": "https://github.com/mike-north/ember-composability",
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
   "devDependencies": {
