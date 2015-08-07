@@ -1,7 +1,6 @@
 import Ember from 'ember';
-import _computed from 'ember-new-computed';
 
-const { assert } = Ember;
+const { computed, assert, get } = Ember;
 
 export default Ember.Mixin.create({
 
@@ -16,37 +15,28 @@ export default Ember.Mixin.create({
     this._super(...arguments);
   },
 
-  composableParent: _computed({
-    get() {
-      return this._componentToRegisterTo();
-    }
-  }),
-
-  _componentToRegisterTo() {
+  composableParent: computed(function() {
     let c = null;
     let parentTypes = this.get('_parentComponentTypes');
     for (let i = 0; i < parentTypes.length && !c; i++) {
       c = this.nearestOfType(parentTypes[i]);
     }
     return c;
-  },
+  }).readOnly(),
 
   shouldRegisterToParent(/*parentComponent*/) {
     return true;
   },
 
   _registerWithParent() {
-    let parentComponent = this._componentToRegisterTo();
-    if (parentComponent) {
-      if (this.shouldRegisterToParent(parentComponent)) {
-        parentComponent.registerChildComponent(this);
-      }
-      this.set('composableParent', parentComponent);
+    let parentComponent = get(this, 'composableParent');
+    if (parentComponent && this.shouldRegisterToParent(parentComponent)) {
+      parentComponent.registerChildComponent(this);
     }
   },
 
   _unregisterWithParent() {
-    let parentComponent = this._componentToRegisterTo();
+    let parentComponent = get(this, 'composableParent');
     if (parentComponent) {
       parentComponent.unregisterChildComponent(this);
     }
