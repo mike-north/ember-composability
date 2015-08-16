@@ -2,12 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
-    RAISE_ON_DEPRECATIONS: !process.env['ALLOW_DEPRECATIONS'],
     modulePrefix: 'dummy',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
+      RAISE_ON_DEPRECATION: !process.env['ALLOW_DEPRECATIONS'],
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
