@@ -5,6 +5,7 @@ const { A, computed, run: { debounce } } = Ember;
 export default Ember.Mixin.create({
   _childComponents: null,
   composableChildrenDebounceTime: 0,
+
   init() {
     this._super(...arguments);
     this.set('_childComponents', new Ember.OrderedSet());
@@ -12,7 +13,7 @@ export default Ember.Mixin.create({
 
   composableChildren: computed(function() {
     const comps = this.get('_childComponents');
-    return comps && comps.length ? this.get('_childComponents').list : new A([]);
+    return comps && comps.size ? this.get('_childComponents').list : new A([]);
   }),
 
   _fireComposableChildrenChanged() {

@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    RAISE_ON_DEPRECATIONS: !process.env['ALLOW_DEPRECATIONS'],
     modulePrefix: 'dummy',
     environment: environment,
     baseURL: '/',
