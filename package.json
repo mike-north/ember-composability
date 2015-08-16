@@ -1,6 +1,6 @@
 {
   "name": "ember-composability",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ember.js composability tools & helpers",
   "directories": {
     "doc": "doc",
@@ -34,7 +34,6 @@
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "mike-north/ember-export-application-global#ember-cli-1.13.8",
-    "ember-new-computed": "1.0.2",
     "ember-suave": "0.1.11",
     "ember-try": "0.0.7"
   },
