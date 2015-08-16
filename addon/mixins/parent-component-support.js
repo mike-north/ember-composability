@@ -1,22 +1,39 @@
 import Ember from 'ember';
 
-const { computed: { alias } } = Ember;
+const { A, computed, run: { debounce } } = Ember;
 
 export default Ember.Mixin.create({
   _childComponents: null,
-
+  composableChildrenDebounceTime: 0,
   init() {
     this._super(...arguments);
-    this.set('_childComponents', Ember.A([]));
+    this.set('_childComponents', new Ember.OrderedSet());
   },
 
-  composableChildren: alias('_childComponents'),
+  composableChildren: computed(function() {
+    const comps = this.get('_childComponents');
+    return comps && comps.length ? this.get('_childComponents').list : new A([]);
+  }),
+
+  _fireComposableChildrenChanged() {
+    this.propertyDidChange('composableChildren');
+  },
+
+  _notifyComposableChildrenChanged() {
+    if (this.get('composableChildrenDebounceTime')) {
+      debounce(this, this._fireComposableChildrenChanged, this.get('composableChildrenDebounceTime'));
+    } else {
+      this._fireComposableChildrenChanged();
+    }
+  },
 
   registerChildComponent(childComponent) {
-    this.get('_childComponents').addObject(childComponent);
+    this.get('_childComponents').add(childComponent);
+    this._notifyComposableChildrenChanged();
   },
 
   unregisterChildComponent(childComponent) {
-    this.get('_childComponents').removeObject(childComponent);
+    this.get('_childComponents').delete(childComponent);
+    this._notifyComposableChildrenChanged();
   }
 });
