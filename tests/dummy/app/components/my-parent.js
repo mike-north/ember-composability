@@ -5,6 +5,7 @@ import computed from 'ember-new-computed';
 
 export default Ember.Component.extend(ParentComponentSupport, {
   classNames: ['bordered-container', 'parent'],
+  composableChildrenDebounceTime: 1,
   layout,
   name: 'lolparent',
 
