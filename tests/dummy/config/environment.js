@@ -7,7 +7,6 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
-      RAISE_ON_DEPRECATION: !process.env['ALLOW_DEPRECATIONS'],
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
@@ -32,7 +31,7 @@ module.exports = function(environment) {
     // Testem prefers this...
     ENV.baseURL = '/';
     ENV.locationType = 'none';
-
+    ENV.EmberENV.RAISE_ON_DEPRECATION: !process.env['ALLOW_DEPRECATIONS'];
     // keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;
     ENV.APP.LOG_VIEW_LOOKUPS = false;
