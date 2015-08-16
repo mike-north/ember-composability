@@ -14,7 +14,7 @@ export default Ember.Mixin.create({
   composableChildren: computed(function() {
     const comps = this.get('_childComponents');
     return comps && comps.size ? this.get('_childComponents').list : new A([]);
-  }),
+  }).readOnly(),
 
   _fireComposableChildrenChanged() {
     this.propertyDidChange('composableChildren');

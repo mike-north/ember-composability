@@ -1,7 +1,6 @@
 import Ember from 'ember';
-import _computed from 'ember-new-computed';
 
-const { assert } = Ember;
+const { assert, computed } = Ember;
 
 export default Ember.Mixin.create({
 
@@ -16,10 +15,8 @@ export default Ember.Mixin.create({
     this._super(...arguments);
   },
 
-  composableParent: _computed({
-    get() {
-      return this._componentToRegisterTo();
-    }
+  composableParent: computed(function() {
+    return this._componentToRegisterTo();
   }),
 
   _componentToRegisterTo() {
