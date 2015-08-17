@@ -1,18 +1,42 @@
 # Change Log
 
-## [v0.0.4](https://github.com/truenorth/ember-composability/tree/v0.0.4) (2015-07-11)
+## [v0.1.2](https://github.com/mike-north/ember-composability/tree/v0.1.2) (2015-08-17)
 
-[Full Changelog](https://github.com/truenorth/ember-composability/compare/v0.0.3...v0.0.4)
+[Full Changelog](https://github.com/mike-north/ember-composability/compare/v0.1.1...v0.1.2)
+
+## [v0.1.1](https://github.com/mike-north/ember-composability/tree/v0.1.1) (2015-08-16)
+
+[Full Changelog](https://github.com/mike-north/ember-composability/compare/v0.1.0...v0.1.1)
 
 **Merged pull requests:**
 
-- Remove ember-data dependency [\#1](https://github.com/truenorth/ember-composability/pull/1) ([truenorth](https://github.com/truenorth))
+- Remove dependency on ember-new-computed [\#4](https://github.com/mike-north/ember-composability/pull/4) ([mike-north](https://github.com/mike-north))
 
-## [v0.0.3](https://github.com/truenorth/ember-composability/tree/v0.0.3) (2015-07-11)
+## [v0.1.0](https://github.com/mike-north/ember-composability/tree/v0.1.0) (2015-08-16)
 
-[Full Changelog](https://github.com/truenorth/ember-composability/compare/v0.0.2...v0.0.3)
+[Full Changelog](https://github.com/mike-north/ember-composability/compare/v0.0.5...v0.1.0)
 
-## [v0.0.2](https://github.com/truenorth/ember-composability/tree/v0.0.2) (2015-07-11)
+**Merged pull requests:**
+
+- Use OrderedSet instead of an Array for composableChildren [\#3](https://github.com/mike-north/ember-composability/pull/3) ([mike-north](https://github.com/mike-north))
+
+## [v0.0.5](https://github.com/mike-north/ember-composability/tree/v0.0.5) (2015-07-21)
+
+[Full Changelog](https://github.com/mike-north/ember-composability/compare/v0.0.4...v0.0.5)
+
+## [v0.0.4](https://github.com/mike-north/ember-composability/tree/v0.0.4) (2015-07-11)
+
+[Full Changelog](https://github.com/mike-north/ember-composability/compare/v0.0.3...v0.0.4)
+
+**Merged pull requests:**
+
+- Remove ember-data dependency [\#1](https://github.com/mike-north/ember-composability/pull/1) ([mike-north](https://github.com/mike-north))
+
+## [v0.0.3](https://github.com/mike-north/ember-composability/tree/v0.0.3) (2015-07-11)
+
+[Full Changelog](https://github.com/mike-north/ember-composability/compare/v0.0.2...v0.0.3)
+
+## [v0.0.2](https://github.com/mike-north/ember-composability/tree/v0.0.2) (2015-07-11)
 
 
 
