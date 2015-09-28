@@ -82,7 +82,7 @@ children can have access to parent properties via the `composableParent` propert
 
 ```
 
-** By default, all children will be registered with their parent. If you'd like to customize which components are registered, override the `shouldRegisterToParent` method:**
+**By default, all children will be registered with their parent. If you'd like to customize which components are registered, override the `shouldRegisterToParent` method:**
 
 ```js
 shouldRegisterToParent(parentComponent) {
