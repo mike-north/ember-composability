@@ -1,6 +1,6 @@
 {
   "name": "ember-composability",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Ember.js composability tools & helpers",
   "directories": {
     "doc": "doc",
