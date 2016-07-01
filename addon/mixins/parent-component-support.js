@@ -1,14 +1,14 @@
 import Ember from 'ember';
 
-const { A, computed, run: { debounce } } = Ember;
+const { A, computed, Mixin, OrderedSet, run: { debounce } } = Ember;
 
-export default Ember.Mixin.create({
+export default Mixin.create({
   _childComponents: null,
   composableChildrenDebounceTime: 0,
 
   init() {
     this._super(...arguments);
-    this.set('_childComponents', new Ember.OrderedSet());
+    this.set('_childComponents', new OrderedSet());
   },
 
   composableChildren: computed(function() {
@@ -16,7 +16,7 @@ export default Ember.Mixin.create({
   }).readOnly(),
 
   getComposableChildren() {
-    const comps = this.get('_childComponents');
+    let comps = this.get('_childComponents');
     return new A(comps && comps.size ? this.get('_childComponents').list : []);
   },
 

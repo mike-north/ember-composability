@@ -3,7 +3,9 @@ import ChildComponentSupport from 'ember-composability/mixins/child-component-su
 import MyParent from './my-parent';
 import layout from '../templates/components/my-child';
 
-export default Ember.Component.extend(ChildComponentSupport, {
+const { Component } = Ember;
+
+export default Component.extend(ChildComponentSupport, {
   classNames: ['bordered-container', 'child'],
   layout,
   value: 3,
