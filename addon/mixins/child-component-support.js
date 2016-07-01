@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
-const { assert, computed } = Ember;
+const { assert, computed, Mixin } = Ember;
 
-export default Ember.Mixin.create({
+export default Mixin.create({
 
   init() {
     this._super(...arguments);
