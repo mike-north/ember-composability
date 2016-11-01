@@ -13,7 +13,7 @@
   },
   "repository": "https://github.com/mike-north/ember-composability.git",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4"
   },
   "homepage": "https://github.com/mike-north/ember-composability",
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
