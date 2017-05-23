@@ -1,5 +1,7 @@
 # ember-composability
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-composability.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/mike-north/ember-composability.svg?branch=master)](https://travis-ci.org/mike-north/ember-composability)
 [![Dependency Status](https://david-dm.org/mike-north/ember-composability.svg)](https://david-dm.org/mike-north/ember-composability)
 [![devDependency Status](https://david-dm.org/mike-north/ember-composability/dev-status.svg)](https://david-dm.org/mike-north/ember-composability#info=devDependencies)

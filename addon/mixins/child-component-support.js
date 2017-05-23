@@ -28,7 +28,7 @@ export default Mixin.create({
     return c;
   },
 
-  shouldRegisterToParent(/*parentComponent*/) {
+  shouldRegisterToParent(/* parentComponent*/) {
     return true;
   },
 
