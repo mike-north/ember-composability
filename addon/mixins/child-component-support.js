@@ -1,12 +1,14 @@
-import Ember from 'ember';
-
-const { assert, computed, Mixin } = Ember;
+import { assert } from '@ember/debug';
+import { computed } from '@ember/object';
+import Mixin from '@ember/object/mixin';
 
 export default Mixin.create({
-
   init() {
     this._super(...arguments);
-    assert('Must define _parentComponentTypes', this.get('_parentComponentTypes'));
+    assert(
+      'Must define _parentComponentTypes',
+      this.get('_parentComponentTypes')
+    );
     this._registerWithParent();
   },
 

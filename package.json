@@ -1,6 +1,6 @@
 {
   "name": "ember-composability",
-  "version": "0.3.8",
+  "version": "0.0.0-development",
   "description": "Ember.js composability tools & helpers",
   "directories": {
     "doc": "doc",
@@ -9,11 +9,13 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "repository": "https://github.com/mike-north/ember-composability.git",
   "engines": {
-    "node": ">= 4"
+    "node": "6.* || 8.* || >= 10.*"
   },
   "homepage": "https://github.com/mike-north/ember-composability",
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
@@ -25,26 +27,33 @@
     "@ember/optional-features": "^0.6.3",
     "@mike-north/js-lib-renovate-config": "^0.0.1",
     "@mike-north/js-lib-semantic-release-config": "^0.0.0-development",
-    "broccoli-asset-rev": "^2.4.5",
+    "@types/ember": "^3.0.25",
+    "broccoli-asset-rev": "^2.7.0",
     "ember-cli": "3.5.0",
-    "ember-cli-dependency-checker": "^2.0.0",
-    "ember-cli-eslint": "^3.0.0",
-    "ember-cli-htmlbars": "^2.0.1",
-    "ember-cli-htmlbars-inline-precompile": "^0.4.3",
-    "ember-cli-inject-live-reload": "^1.4.0",
+    "ember-cli-dependency-checker": "^3.0.0",
+    "ember-cli-eslint": "^4.2.3",
+    "ember-cli-htmlbars": "^3.0.0",
+    "ember-cli-htmlbars-inline-precompile": "^1.0.3",
+    "ember-cli-inject-live-reload": "^1.8.2",
     "ember-cli-qunit": "^4.0.0",
-    "ember-cli-release": "1.0.0-beta.2",
-    "ember-cli-shims": "^1.1.0",
-    "ember-cli-uglify": "^1.2.0",
-    "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-cli-sri": "^2.1.1",
+    "ember-cli-template-lint": "^1.0.0-beta.1",
+    "ember-cli-uglify": "^2.1.0",
+    "ember-disable-prototype-extensions": "^1.1.3",
     "ember-export-application-global": "^2.0.0",
-    "ember-load-initializers": "^1.0.0",
-    "ember-resolver": "^4.1.0",
-    "ember-source": "~2.13.0",
-    "eslint-plugin-ember-suave": "^1.0.0",
-    "greenkeeper-lockfile": "^1.2.1",
+    "ember-load-initializers": "^1.1.0",
+    "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-resolver": "^5.0.1",
+    "ember-source": "~3.5.0",
+    "ember-source-channel-url": "^1.1.0",
+    "ember-try": "^1.0.0",
+    "eslint-plugin-ember": "^5.2.0",
+    "eslint-plugin-node": "^7.0.1",
     "husky": "1.1.2",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "qunit-dom": "^0.8.0",
+    "travis-deploy-once": "^5.0.9",
+    "semantic-release": "^15.10.8"
   },
   "keywords": [
     "ember-addon",
@@ -53,7 +62,7 @@
     "component"
   ],
   "dependencies": {
-    "ember-cli-babel": "^6.0.0"
+    "ember-cli-babel": "^6.16.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

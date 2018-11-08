@@ -1,6 +1,12 @@
+import { A } from '@ember/array';
+import { computed } from '@ember/object';
+import Mixin from '@ember/object/mixin';
+import { debounce } from '@ember/runloop';
 import Ember from 'ember';
 
-const { A, computed, Mixin, OrderedSet, run: { debounce } } = Ember;
+const {
+  OrderedSet
+} = Ember;
 
 export default Mixin.create({
   _childComponents: null,
