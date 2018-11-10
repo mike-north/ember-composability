@@ -1,3 +1,16 @@
+# [0.4.0](https://github.com/mike-north/ember-composability/compare/v0.3.8...v0.4.0) (2018-11-10)
+
+
+### Bug Fixes
+
+* don't require ember-canary to pass tests ([fae0bc7](https://github.com/mike-north/ember-composability/commit/fae0bc7))
+* don't require ember-canary to pass tests ([c92ce49](https://github.com/mike-north/ember-composability/commit/c92ce49))
+
+
+### Features
+
+* modernization ([00a949c](https://github.com/mike-north/ember-composability/commit/00a949c))
+
 # Change Log
 
 ## [v0.0.4](https://github.com/truenorth/ember-composability/tree/v0.0.4) (2015-07-11)
