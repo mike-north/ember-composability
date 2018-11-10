@@ -1,13 +1,7 @@
 # ember-composability
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-composability.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/mike-north/ember-composability.svg?branch=master)](https://travis-ci.org/mike-north/ember-composability)
-[![Dependency Status](https://david-dm.org/mike-north/ember-composability.svg)](https://david-dm.org/mike-north/ember-composability)
-[![devDependency Status](https://david-dm.org/mike-north/ember-composability/dev-status.svg)](https://david-dm.org/mike-north/ember-composability#info=devDependencies)
-[![Code Climate](https://codeclimate.com/github/mike-north/ember-composability/badges/gpa.svg)](https://codeclimate.com/github/mike-north/ember-composability)
 [![npm version](https://badge.fury.io/js/ember-composability.svg)](http://badge.fury.io/js/ember-composability)
-[![Ember Observer Score](http://emberobserver.com/badges/ember-composability.svg)](http://emberobserver.com/addons/ember-composability)
 
 Composability-oriented tools for Ember.js apps
 
@@ -17,20 +11,20 @@ The `child-component-support` and `parent-component-support` mixins can be used 
 
 For example, you may want to expressively declare some parent/child components like this
 
-````handlebars
+```handlebars
 {{#my-parent}}
   {{my-child}}
   {{my-child}}
   {{my-child}}
 {{/my-parent}}
 
-````
+```
 
 #### Parent
 
 **app/components/my-parent.js**
 
-````js
+```js
 import Ember from 'ember';
 import ParentComponentSupport from 'ember-composability/mixins/parent-component-support';
 import layout from '../templates/components/my-parent';
@@ -39,29 +33,28 @@ export default Ember.Component.extend(ParentComponentSupport, {
   name: 'mike',
   layout
 });
-
-````
+```
 
 parents can have access to child properties, via the `composableChildren` property
 
 **app/components/my-parent.js**
 
 ```javascript
-
-  totalValue: computed('composableChildren.@each.value', {
-    get() {
-      return this.get('composableChildren')
-        .reduce((acc, val) => acc += val.get('value'), 0);
-    }
-  })
-
+totalValue: computed('composableChildren.@each.value', {
+  get() {
+    return this.get('composableChildren').reduce(
+      (acc, val) => (acc += val.get('value')),
+      0
+    );
+  }
+});
 ```
 
 #### Child
 
 **app/components/my-child.js**
 
-````js
+```js
 import Ember from 'ember';
 import ChildComponentSupport from 'ember-composability/mixins/child-component-support';
 import MyParent from './my-parent';
@@ -72,8 +65,7 @@ export default Ember.Component.extend(ChildComponentSupport, {
   layout,
   _parentComponentTypes: [MyParent]
 });
-
-````
+```
 
 children can have access to parent properties via the `composableParent` property
 
@@ -94,26 +86,25 @@ shouldRegisterToParent(parentComponent) {
 }
 ```
 
-
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+- `git clone` this repository
+- `npm install`
+- `bower install`
 
 ## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+- `ember server`
+- Visit your app at http://localhost:4200.
 
 ## Running Tests
 
-* `ember test`
-* `ember test --server`
+- `ember test`
+- `ember test --server`
 
 ## Building
 
-* `ember build`
+- `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
