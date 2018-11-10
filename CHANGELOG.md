@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/mike-north/ember-composability/compare/v0.4.0...v1.0.0) (2018-11-10)
+
+
+### chore
+
+* remove unused code, touchup README ([4b8a93f](https://github.com/mike-north/ember-composability/commit/4b8a93f))
+
+
+### BREAKING CHANGES
+
+* declare 1.0 release
+
 # [0.4.0](https://github.com/mike-north/ember-composability/compare/v0.3.8...v0.4.0) (2018-11-10)
 
 
