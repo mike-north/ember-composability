@@ -1,7 +1,7 @@
 # ember-composability
 
 [![Build Status](https://travis-ci.org/mike-north/ember-composability.svg?branch=master)](https://travis-ci.org/mike-north/ember-composability)
-[![npm version](https://badge.fury.io/js/ember-composability.svg)](http://badge.fury.io/js/ember-composability)
+[![npm version](https://img.shields.io/npm/v/ember-composability.svg)](https://www.npmjs.com/package/ember-composability)
 
 Composability-oriented tools for Ember.js apps
 
