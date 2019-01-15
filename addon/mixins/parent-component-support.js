@@ -2,11 +2,7 @@ import { A } from '@ember/array';
 import { computed } from '@ember/object';
 import Mixin from '@ember/object/mixin';
 import { debounce } from '@ember/runloop';
-import Ember from 'ember';
-
-const {
-  OrderedSet
-} = Ember;
+import OrderedSet from '@ember/ordered-set';
 
 export default Mixin.create({
   _childComponents: null,
@@ -27,7 +23,16 @@ export default Mixin.create({
   },
 
   _fireComposableChildrenChanged() {
-    this.propertyDidChange('composableChildren');
+    if (typeof this.notifyPropertyChange === 'function') {
+      this.notifyPropertyChange('composableChildren');
+    }
+    else if (typeof this.propertyDidChange === 'function') {
+      // Deprecated in ember 3.1
+      this.propertyDidChange('composableChildren');
+    }
+    else {
+      throw new Error('Unable to call notifyPropertyChange');
+    }
   },
 
   _notifyComposableChildrenChanged() {
