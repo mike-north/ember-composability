@@ -1019,10 +1019,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/ember@3.0.25":
-  version "3.0.25"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.0.25.tgz#9ab6a8be3d03a72176824bb7a59583648b6b1ced"
-  integrity sha512-+M4yzJ0v+Ly62clAoxmAxViFg+/2HiktQnzKh825/y9Ra3k7o4PFsas0Z7xERmRVleqtPikehwdi6BuEnPUVkw==
+"@types/ember@3.0.26":
+  version "3.0.26"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.0.26.tgz#54381f59c63e8860de9ea0c40defb519f117b0b3"
+  integrity sha512-GsvXPrRHBYSq55ZHaXX7NpMvmJBe95Uy8wHAF+2KDIcEy2HbHps6QcnrRBgg/8MEEI71lFs28ZKrTY/YhwyQOw==
   dependencies:
     "@types/ember__application" "*"
     "@types/ember__array" "*"
@@ -9787,39 +9787,7 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@15.12.4:
-  version "15.12.4"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.12.4.tgz#d0f4c3649d01e2e29a9df5e4886bab869d75ef02"
-  integrity sha512-po30Te9E26v3Qb/G9pXFO6lCTFO07zvliqH00vmfuCoAjl1Wpg9SKb9dXVFM7BTdg5Fr/KqbdOsqHkT7kR4FeQ==
-  dependencies:
-    "@semantic-release/commit-analyzer" "^6.1.0"
-    "@semantic-release/error" "^2.2.0"
-    "@semantic-release/github" "^5.1.0"
-    "@semantic-release/npm" "^5.0.5"
-    "@semantic-release/release-notes-generator" "^7.1.2"
-    aggregate-error "^1.0.0"
-    cosmiconfig "^5.0.1"
-    debug "^4.0.0"
-    env-ci "^3.0.0"
-    execa "^1.0.0"
-    figures "^2.0.0"
-    find-versions "^3.0.0"
-    get-stream "^4.0.0"
-    git-log-parser "^1.2.0"
-    hook-std "^1.1.0"
-    hosted-git-info "^2.7.1"
-    lodash "^4.17.4"
-    marked "^0.5.0"
-    marked-terminal "^3.0.0"
-    p-locate "^3.0.0"
-    p-reduce "^1.0.0"
-    read-pkg-up "^4.0.0"
-    resolve-from "^4.0.0"
-    semver "^5.4.1"
-    signale "^1.2.1"
-    yargs "^12.0.0"
-
-semantic-release@^15.9.9:
+semantic-release@15.12.4, semantic-release@^15.9.9:
   version "15.12.4"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.12.4.tgz#d0f4c3649d01e2e29a9df5e4886bab869d75ef02"
   integrity sha512-po30Te9E26v3Qb/G9pXFO6lCTFO07zvliqH00vmfuCoAjl1Wpg9SKb9dXVFM7BTdg5Fr/KqbdOsqHkT7kR4FeQ==
