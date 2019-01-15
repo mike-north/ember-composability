@@ -2,11 +2,7 @@ import { A } from '@ember/array';
 import { computed } from '@ember/object';
 import Mixin from '@ember/object/mixin';
 import { debounce } from '@ember/runloop';
-import Ember from 'ember';
-
-const {
-  OrderedSet
-} = Ember;
+import OrderedSet from '@ember/ordered-set';
 
 export default Mixin.create({
   _childComponents: null,
