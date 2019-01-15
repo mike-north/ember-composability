@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/mike-north/ember-composability/compare/v1.0.0...v1.0.1) (2019-01-15)
+
+
+### Bug Fixes
+
+* use [@ember](https://github.com/ember)/ordered-set instead of private API (fixes [#114](https://github.com/mike-north/ember-composability/issues/114)) ([ff01588](https://github.com/mike-north/ember-composability/commit/ff01588))
+* use notifyPropertyChange instead of propertyDidChange (fixes [#89](https://github.com/mike-north/ember-composability/issues/89)) ([d47bc69](https://github.com/mike-north/ember-composability/commit/d47bc69))
+
 # [1.0.0](https://github.com/mike-north/ember-composability/compare/v0.4.0...v1.0.0) (2018-11-10)
 
 
