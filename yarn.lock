@@ -4358,10 +4358,10 @@ ember-cli-version-checker@^3.0.0, ember-cli-version-checker@^3.0.1:
     resolve-package-path "^1.2.6"
     semver "^5.6.0"
 
-ember-cli@3.8.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.8.1.tgz#2a4f66cf9da3c9665658690e615479af32749807"
-  integrity sha512-cg8Ug60lbNPQVGjHnO66cmrgFXxlFFdkDp+//e58Kgl9mz17cQIbU1TD1pMaW0dYi+2/XADeftHBULs3ejQBSA==
+ember-cli@3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.8.2.tgz#86b4aa603215277ba44261a9285ef1dc2b7bc702"
+  integrity sha512-K8Oljg8OXI1rTR9A+e1YF5lIn2CMZsCQiSbMSX/EDdmqOjYA3CNk0GAL4Mr1GQsNUxLV51ZkmUz6TvKVkbtKqQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-transform-modules-amd" "^7.2.0"
@@ -4537,10 +4537,10 @@ ember-source-channel-url@1.1.0, ember-source-channel-url@^1.0.1, ember-source-ch
   dependencies:
     got "^8.0.1"
 
-ember-source@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.9.0.tgz#cab72c07c30d8313e1cae3ef9a68c0a3d7d1b7de"
-  integrity sha512-VHeovle0+ZBnIbEcuNcIl1+HfActbplkJBMcaXAj/sCp46ayNPHB0zl+0ix74j+MOTiu8GEXZ6GHaqgwGmhvMw==
+ember-source@3.9.1:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.9.1.tgz#e6c7b08f823f9a55e448af1cc439266cabc3e65e"
+  integrity sha512-0rfP1m3KbfylKNnxk4ZWy0jqwqIWGm5rb7ZZFn4zazVJFI6gEmratWadXfzwEgqG2ukRcW9F8frEk0utuaAnMg==
   dependencies:
     broccoli-funnel "^2.0.2"
     broccoli-merge-trees "^3.0.2"
