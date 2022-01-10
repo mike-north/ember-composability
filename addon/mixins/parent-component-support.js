@@ -19,7 +19,7 @@ export default Mixin.create({
 
   getComposableChildren() {
     let comps = this.get('_childComponents');
-    return new A(comps && comps.size ? this.get('_childComponents').list : []);
+    return A(comps && comps.size ? this.get('_childComponents').list : []);
   },
 
   _fireComposableChildrenChanged() {
