@@ -1,5 +1,4 @@
 import { assert } from '@ember/debug';
-import { computed } from '@ember/object';
 import Mixin from '@ember/object/mixin';
 
 export default Mixin.create({
@@ -10,16 +9,13 @@ export default Mixin.create({
       this.get('_parentComponentTypes')
     );
     this._registerWithParent();
+    this.set('composableParent', this._componentToRegisterTo());
   },
 
   willDestroyElement() {
     this._unregisterWithParent();
     this._super(...arguments);
   },
-
-  composableParent: computed(function() {
-    return this._componentToRegisterTo();
-  }),
 
   _componentToRegisterTo() {
     let c = null;
